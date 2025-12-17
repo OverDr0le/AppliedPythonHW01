@@ -1,8 +1,6 @@
 from pandas import DataFrame,read_csv
 
-def df_loader(link:str):
-    if link.split('.')[1] != 'csv':
-        raise ValueError('Ошибка формата ссылки, введите формат .csv')
+def df_loader(link):
     df = read_csv(link)
     return df
 
